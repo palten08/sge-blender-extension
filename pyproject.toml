@@ -1,0 +1,12 @@
+[project]
+name = "sge_blender_extension"
+version = "0.1.0"
+description = "A Blender extension used for authoring scenes for the Shit Game Engine"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "fake-bpy-module-latest>=20260321",
+]

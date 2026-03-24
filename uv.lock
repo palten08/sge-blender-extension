@@ -1,0 +1,27 @@
+version = 1
+revision = 3
+requires-python = ">=3.14"
+
+[[package]]
+name = "fake-bpy-module-latest"
+version = "20260321"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/77/a3/5cb7f449554a7641a5a33f372f8ed1e9101a4dc63aec613305bff3e38e38/fake_bpy_module_latest-20260321.tar.gz", hash = "sha256:d16cf2ab1a5d22196068da66e664c28db12fb5b3d3319312bfc63b373c01e40f", size = 878823, upload-time = "2026-03-21T06:32:52.397Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/7b/ce/f12c87f1c068d7ade98fb58aacfc2d172df30198843986002c85658b6eb8/fake_bpy_module_latest-20260321-py3-none-any.whl", hash = "sha256:bf51f02aa530e27cb4806f214ce113fd2431fca66886930656916a5d070427a6", size = 1015993, upload-time = "2026-03-21T06:32:50.11Z" },
+]
+
+[[package]]
+name = "sge_blender_extension"
+version = "0.1.0"
+source = { virtual = "." }
+
+[package.dev-dependencies]
+dev = [
+    { name = "fake-bpy-module-latest" },
+]
+
+[package.metadata]
+
+[package.metadata.requires-dev]
+dev = [{ name = "fake-bpy-module-latest", specifier = ">=20260321" }]
